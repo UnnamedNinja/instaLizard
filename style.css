@@ -1,11 +1,38 @@
-.body {
+body {
     font-size: 16px;
+    background-color: #f0efea;
+    font-family: 'Vollkorn', serif;
+    font-weight: 600;
 }
 
-header {
+#mainNav {
     position: fixed;
     width: 100%;
     z-index: 99;
+    min-height: 75px;
+    background-color: #31a2ac !important;
+}
+
+#mainNav .logo {
+    width: 50px;
+}
+
+#mainNav .nav-link {
+    color: snow;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+#mainNav .nav-link:hover {
+    color: rgb(150, 198, 226);
+}
+
+.advantages {
+    padding-top: 200px;
+}
+
+.advantages .jumbotron {
+    background-color: #d72c16e0;
 }
 
 .advantages-group-item {
@@ -49,5 +76,6 @@ header {
 }
 
 footer {
-    height: 300px;
+    height: 200px;
+    color: white;
 }

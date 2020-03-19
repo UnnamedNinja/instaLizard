@@ -5,40 +5,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="style.css" rel="stylesheet">
-    <title>instaGrow</title>
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+  <title>instaGrow</title>
   </head>
   <body>
-      <header class="mb-5">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Brand</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-                <li class="nav-item">
+
+    <!-- МЕНЮ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+              <li class="nav-item">
                   <a class="nav-link" href="#">Главная</a>
-                </li>
-                <li class="nav-item">
+              </li>
+              <li class="nav-item">
                   <a class="nav-link" href="#">Услуги</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      О нас
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        О нас
+                      </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <a class="dropdown-item" href="#">Преимущества</a>
                       <a class="dropdown-item" href="#">Отзывы</a>
-                    </div>
-                </li>
-                <li class="nav-item">
+                  </div>
+              </li>
+              <li class="nav-item">
                   <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-      </header>
+              </li>
+          </ul>
+      </div>
+  </nav>
 
       <!-- ПЕРЕВАГИ -->
       <section class="advantages">
@@ -55,21 +56,21 @@
                         </div>
                     </div>
                     <div class="advantages-group-item col-md-3 card">
-                        <img src="img/strength.png" class="card-img-top">
+                        <img src="img/speed.png" class="card-img-top">
                         <div class="card-body">
                             <h3 class="card-title">Сила</h3>
                             <p class="card-text">Ми сильны не только телом, но и духом!</p>
                         </div>
                     </div>
                     <div class="advantages-group-item col-md-3 card">
-                        <img src="img/kind.png" class="card-img-top">
+                        <img src="img/speed.png" class="card-img-top">
                         <div class="card-body">
                             <h3 class="card-title">Ловкость</h3>
                             <p class="card-text">Если нахамите нам, мы вас найдем!</p>
                         </div>
                     </div>
                     <div class="advantages-group-item col-md-3 card">
-                        <img src="img/kind.png" class="card-img-top">
+                        <img src="img/speed.png" class="card-img-top">
                         <div class="card-body">
                             <h3 class="card-title">Точность</h3>
                             <p class="card-text">Если нахамите нам, мы вас найдем!</p>
@@ -494,18 +495,10 @@
           </div>
         </div>
       </section>
-      
-                <!-- <a class="service-link" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="service-link" href="#"><i class="fab fa-facebook"></i></a>
-                <a class="service-link" href="#"><i class="fab fa-youtube"></i></a>
-                <a class="service-link" href="#"><i class="fab fa-vk"></i></a>
-                <a class="service-link" href="#"><i class="fab fa-telegram"></i></a> -->
-          
-
 
       <!-- ВІДГУКИ -->
-      <section class="reviews">
-        <div class="container slider bg-dark">
+      <section class="reviews m-5">
+        <div class="container slider bg-light">
             <section id="slides" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
                     <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -572,9 +565,22 @@
       </section>
 
       
-<!-- ПІДВАЛ -->
-<footer class="bg-light">
-</footer>
+      <!-- ПІДВАЛ -->
+      <footer class="bg-dark">
+        <div class="container d-flex justify-content-between">
+          <div class="logo">
+            <h2 class="display-3">Brand</h2>
+          </div>
+          <div class="social">
+            <h2 class="display-4">Наши контакты</h2>
+            <ul>
+              <li>53456456546</li>
+              <li>75647567566</li>
+              <li>56756756756</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 
 
 

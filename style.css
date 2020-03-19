@@ -31,6 +31,11 @@ body {
     padding-top: 200px;
 }
 
+.advantages img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
 .advantages .jumbotron {
     background-color: #d72c16e0;
 }
@@ -40,9 +45,103 @@ body {
     border: none;
 }
 
-.service-link {
-    color: black;
-    font-size: 80px;
+.services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.services .main-card {
+    width: 48%;
+    margin-bottom: 70px;
+    font-weight: lighter;
+    background-color: transparent;
+    border: none;
+}
+
+.main-card h5 {
+    display: flex;
+    justify-content: center;
+}
+
+.main-card .title {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.main-card .prices-btn {
+    padding: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    width: 100px;
+}
+
+.main-card .card-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 100px;
+    padding: 0;
+}
+
+.main-card .card-text li:first-child::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background-image: url("img/users.png");
+}
+
+.main-card .card-text li:nth-child(2)::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background-image: url("img/like.png");
+}
+
+.main-card .card-text li:nth-child(3)::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background-image: url("img/eye.png");
+}
+
+.instagram-card .card-header{
+    background-color: #991818;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.instagram-card .card-body{
+    background-color: #af1c1c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.instagram-card .prices-btn {
+    background-color: #31a2ac;
+}
+
+.instagram-card .prices-btn:hover {
+    background-color: #31a2acd8;
+}
+
+.instagram-card + aside {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    width: 300px;
+}
+
+.facebook-card {
+    align-self: flex-end;
 }
 
 .service-group img {
@@ -78,4 +177,5 @@ body {
 footer {
     height: 200px;
     color: white;
+    width: 100%;
 }

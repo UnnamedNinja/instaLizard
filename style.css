@@ -1,4 +1,53 @@
+.body {
+    font-size: 16px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
 .advantages-group-item {
     background-color: transparent;
     border: none;
+}
+
+.service-link {
+    color: black;
+    font-size: 80px;
+}
+
+.service-group img {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-group .card {
+    height: 550px;
+}
+
+.service-group table {
+    margin: 0 auto;
+}
+
+.service-group table td{
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+.reviews .card {
+    margin: 0 auto;
+}
+
+.reviews img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer {
+    height: 300px;
 }

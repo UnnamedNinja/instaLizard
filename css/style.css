@@ -5,6 +5,18 @@ body {
     font-weight: 600;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.815);
+    border: none;
+}
+
+
+
 #mainNav {
     position: fixed;
     width: 100%;
@@ -46,10 +58,16 @@ body {
 }
 
 .services {
+    margin: 100px 0;
+}
+
+.services .container {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
+
 
 .services .main-card {
     width: 48%;
@@ -57,6 +75,10 @@ body {
     font-weight: lighter;
     background-color: transparent;
     border: none;
+}
+
+.btn:focus, .btn:active {
+    box-shadow: none;
 }
 
 .main-card h5 {
@@ -92,7 +114,7 @@ body {
     margin: 0 auto;
     width: 32px;
     height: 32px;
-    background-image: url("img/users.png");
+    background-image: url("../img/users.png");
 }
 
 .main-card .card-text li:nth-child(2)::before {
@@ -101,7 +123,7 @@ body {
     margin: 0 auto;
     width: 32px;
     height: 32px;
-    background-image: url("img/like.png");
+    background-image: url("../img/like.png");
 }
 
 .main-card .card-text li:nth-child(3)::before {
@@ -110,7 +132,7 @@ body {
     margin: 0 auto;
     width: 32px;
     height: 32px;
-    background-image: url("img/eye.png");
+    background-image: url("../img/eye.png");
 }
 
 .instagram-card .card-header{
@@ -135,13 +157,63 @@ body {
 
 .instagram-card + aside {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 10%;
     width: 300px;
+    text-align: justify;
 }
 
 .facebook-card {
     align-self: flex-end;
+    color: rgb(242, 248, 217);
+}
+
+.facebook-card .card-header{
+    background-color: #063852;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.facebook-card .card-body{
+    background-color: #0b4869;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.facebook-card + aside {
+    position: absolute;
+    top: 350px;
+    left: 10%;
+    width: 300px;
+    text-align: justify;
+}
+
+.telegram-card {
+    color: whitesmoke;
+}
+
+.telegram-card .card-header{
+    background-color: #2f2f28;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.telegram-card .card-body{
+    background-color: #2f2f28d7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.telegram-card + aside {
+    position: absolute;
+    top: 685px;
+    right: 10%;
+    width: 300px;
+    text-align: justify;
+}
+
+.modal-content {
+    width: 500px;
 }
 
 .service-group img {
@@ -164,6 +236,15 @@ body {
     padding: 10px;
 }
 
+.modal .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-foot {
+    border: 2px solid brown;
+}
+
 .reviews .card {
     margin: 0 auto;
 }
@@ -178,4 +259,35 @@ footer {
     height: 200px;
     color: white;
     width: 100%;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 25px;
+    background-color: transparent;
+    background-image: url("../img/up.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+  
+#myBtn:hover {
+    transform: scale(1.2);
+}
+  
+
+
+
+@media (max-width: 576px) {
+    
 }

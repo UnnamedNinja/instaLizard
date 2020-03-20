@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
   <title>instaGrow</title>
   </head>
@@ -23,7 +23,7 @@
                   <a class="nav-link" href="#">Главная</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Услуги</a>
+                  <a class="nav-link" href="#services">Услуги</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,7 +31,7 @@
                       </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <a class="dropdown-item" href="#">Преимущества</a>
-                      <a class="dropdown-item" href="#">Отзывы</a>
+                      <a class="dropdown-item" href="#reviews">Отзывы</a>
                   </div>
               </li>
               <li class="nav-item">
@@ -45,8 +45,7 @@
       <section class="advantages">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h2 class="text-center display-4">Преимущества работы с нами</h2>
-                <hr>
+                <h2 class="text-center display-4">Преимущества работы с нами<hr></h2>
                 <div class="advantages-group row text-center justify-content-around">
                     <div class="advantages-group-item col-md-3 card">
                         <img src="img/speed.png" class="card-img-top">
@@ -82,10 +81,10 @@
       </section>
 
       <!-- ПОСЛУГИ -->
+      <section class="services" id="services">
+        <h2 class="display-4 text-center mt-5">Услуги<hr></h2>
         <div class="container p-0">
-          <h2 class="display-4 text-center mt-5">Услуги</h2>
-          <hr>
-          <section class="services">
+          
           <!-- ІНСТАГРАМ РОЗДІЛ-->
           <div class="instagram-card main-card card">
               <h5 class="card-header"><i class="fab fa-instagram"></i><span class="title">Инстаграм</span></h5>
@@ -95,14 +94,14 @@
                   <li>Лайки</li>
                   <li>Просмотры</li>
                 </ul>
-                <button type="button" class="btn btn-primary prices-btn" data-toggle="modal" data-target="#instagramModal">
+                <button type="button" class="btn prices-btn" data-toggle="modal" data-target="#instagramModal">
                   Цены
                 </button>
               </div>
           </div>
           <aside>
             <hr>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
             <hr>
           </aside>
           <!-- ФЕЙСБУК РОЗДІЛ-->
@@ -119,6 +118,11 @@
               </button>
             </div>
           </div>
+          <aside>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
+            <hr>
+          </aside>
           <!-- ТЕЛЕГРАМ РОЗДІЛ-->
           <div class="telegram-card main-card card">
             <h5 class="card-header"><i class="fab fa-telegram"></i>Telegram</h5>
@@ -132,16 +136,21 @@
               </button>
             </div>
           </div>
-        </section>
+          <aside>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
+            <hr>
+          </aside>
         </div>
-
+        </section>
+        
           <!-- МОДАЛЬНЕ ВІКНО ІНСТАГРАМ -->
         <div class="modal fade" id="instagramModal" tabindex="-1">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Инстаграм</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -334,19 +343,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        вайбер: 345634646 телега: 6547567567
+                    <div class="modal-foot">
+                        <p>Для оформления заказа свяжитесь с нами:</p>
+                        <p>Viber: 0975443679</p>
+                        <p>Telegram: 0975443679</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- МОДАЛЬНЕ ВІКНО ФЕЙСБУК -->
         <div class="modal fade" id="facebookModal" tabindex="-1">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Facebook</h5>
-                        <button type="button" class="close" data-dismiss="modal">
+                        <button type="button" class="btn close" data-dismiss="modal">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -427,7 +438,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-foot">
                         вайбер: 345634646 телега: 6547567567
                     </div>
                 </div>
@@ -435,11 +446,11 @@
         </div>
         <!-- МОДАЛЬНЕ ВІКНО ТЕЛЕГРАМ -->
         <div class="modal fade" id="telegramModal" tabindex="-1">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Telegram</h5>
-                        <button type="button" class="close" data-dismiss="modal">
+                        <button type="button" class="btn close" data-dismiss="modal">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -489,7 +500,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-foot">
                         вайбер: 345634646 телега: 6547567567
                     </div>
                 </div>
@@ -497,7 +508,8 @@
         </div>
 
       <!-- ВІДГУКИ -->
-      <section class="reviews m-5">
+      <section class="reviews m-5" id="reviews">
+        <h2 class="display-4 text-center mt-5">Отзывы<hr></h2>
         <div class="container slider bg-light">
             <section id="slides" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
@@ -583,11 +595,12 @@
       </footer>
 
 
+      <button onclick="topFunction()" id="myBtn" title="Вверх"></button>  
 
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="js/myscript.js"></script>
   </body>
 </html>

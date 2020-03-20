@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    background-color: #f0efea;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     font-family: 'Vollkorn', serif;
     font-weight: 600;
 }
@@ -15,14 +15,11 @@ hr {
     border: none;
 }
 
-
-
 #mainNav {
-    position: fixed;
     width: 100%;
     z-index: 99;
     min-height: 75px;
-    background-color: #31a2ac !important;
+    background-color: black !important;
 }
 
 #mainNav .logo {
@@ -39,17 +36,11 @@ hr {
     color: rgb(150, 198, 226);
 }
 
-.advantages {
-    padding-top: 200px;
-}
+
 
 .advantages img {
     max-width: 200px;
     margin: 0 auto;
-}
-
-.advantages .jumbotron {
-    background-color: #d72c16e0;
 }
 
 .advantages-group-item {
@@ -61,10 +52,12 @@ hr {
     margin: 100px 0;
 }
 
+.services .row {
+    margin-top: 30px;
+}
+
 .services .container {
     position: relative;
-    display: flex;
-    flex-direction: column;
     margin-top: 50px;
 }
 
@@ -75,6 +68,12 @@ hr {
     font-weight: lighter;
     background-color: transparent;
     border: none;
+    height: 350px;
+}
+
+.services aside {
+    margin-top: 35px;
+    font-size: 20px;
 }
 
 .btn:focus, .btn:active {
@@ -88,7 +87,12 @@ hr {
 
 .main-card .title {
     margin-left: 5px;
-    font-size: 20px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.main-card button {
+    margin-top: 30px;
 }
 
 .main-card .prices-btn {
@@ -99,12 +103,17 @@ hr {
     width: 100px;
 }
 
+.main-card .card-body {
+    padding-top: 50px;
+}
+
 .main-card .card-text{
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     height: 100px;
+    font-size: 18px;
     padding: 0;
 }
 
@@ -112,55 +121,55 @@ hr {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 32px;
-    height: 32px;
-    background-image: url("../img/users.png");
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/subscribe.png");
+    background-size: 100px;
 }
 
 .main-card .card-text li:nth-child(2)::before {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 32px;
-    height: 32px;
-    background-image: url("../img/like.png");
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    background-image: url("../img/heart.png");
+    background-repeat: no-repeat;
 }
 
 .main-card .card-text li:nth-child(3)::before {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 32px;
-    height: 32px;
-    background-image: url("../img/eye.png");
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    background-image: url("../img/views.png");
+}
+
+.instagram-card {
+    color: black;
 }
 
 .instagram-card .card-header{
-    background-color: #991818;
+    background-color: #f9dd24;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .instagram-card .card-body{
-    background-color: #af1c1c;
+    background-color: #f9dd2450;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .instagram-card .prices-btn {
-    background-color: #31a2ac;
+    background-color: #f9dd24;
 }
 
 .instagram-card .prices-btn:hover {
-    background-color: #31a2acd8;
-}
-
-.instagram-card + aside {
-    position: absolute;
-    top: 25px;
-    right: 10%;
-    width: 300px;
-    text-align: justify;
+    background-color: #c9b21d;
 }
 
 .facebook-card {
@@ -175,17 +184,9 @@ hr {
 }
 
 .facebook-card .card-body{
-    background-color: #0b4869;
+    background-color: #0b486986;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-.facebook-card + aside {
-    position: absolute;
-    top: 350px;
-    left: 10%;
-    width: 300px;
-    text-align: justify;
 }
 
 .telegram-card {
@@ -202,18 +203,6 @@ hr {
     background-color: #2f2f28d7;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-.telegram-card + aside {
-    position: absolute;
-    top: 685px;
-    right: 10%;
-    width: 300px;
-    text-align: justify;
-}
-
-.modal-content {
-    width: 500px;
 }
 
 .service-group img {
@@ -239,11 +228,30 @@ hr {
 .modal .nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 0 !important;
+}
+
+.modal .nav-link {
+    background-color: #c73434;
+    color: black;
+    padding: 15px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.modal .nav-link.active {
+    background-color: #af1c1c;
+    color: black;
 }
 
 .modal-foot {
     border: 2px solid brown;
 }
+
+.instruction {
+    background-color: #F0FFF0;
+}
+
 
 .reviews .card {
     margin: 0 auto;
@@ -288,6 +296,35 @@ footer {
 
 
 
-@media (max-width: 576px) {
-    
+@media (max-width: 767px) {
+    .services .main-card {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .services aside {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+
+    .instagram-card {
+        order: 1;
+    }
+    .instagram-description {
+        order: 2;
+        
+    }
+    .facebook-card {
+        order: 3;
+    }
+    .facebook-description {
+        order: 4;
+    }
+    .telegram-card {
+        order: 5;
+    }
+    .telegram-description {
+        order: 6;
+    }
+
 }

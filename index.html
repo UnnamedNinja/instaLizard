@@ -1,606 +1,629 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
-  <title>instaGrow</title>
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>instaGrow</title>
+</head>
+
+<body>
 
     <!-- МЕНЮ -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Главная</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#services">Услуги</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Услуги</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         О нас
                       </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Преимущества</a>
-                      <a class="dropdown-item" href="#reviews">Отзывы</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
-              </li>
-          </ul>
-      </div>
-  </nav>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Преимущества</a>
+                        <a class="dropdown-item" href="#reviews">Отзывы</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#instruction" tabindex="-1" aria-disabled="true">Как заказать?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-      <!-- ПЕРЕВАГИ -->
-      <section class="advantages">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h2 class="text-center display-4">Преимущества работы с нами<hr></h2>
-                <div class="advantages-group row text-center justify-content-around">
-                    <div class="advantages-group-item col-md-3 card">
-                        <img src="img/speed.png" class="card-img-top">
-                        <div class="card-body">
+    <!-- ПОСЛУГИ -->
+    <div class="container mt-0">
+        <section class="services" id="services">
+            <h2 class="display-4 text-center mt-5">Услуги</h2>
+            <hr>
+            <div class="row justify-content-between">
+
+                <!-- ІНСТАГРАМ РОЗДІЛ-->
+                <div class="col-md-7 instagram-card main-card card d-flex">
+                    <h5 class="card-header"><i class="fab fa-instagram" style="font-size: 30px;"></i><span class="title">Instagram</span></h5>
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>Подписчики</li>
+                            <li>Лайки</li>
+                            <li>Просмотры</li>
+                        </ul>
+                        <button type="button" class="btn prices-btn" data-toggle="modal" data-target="#instagramModal">
+                            Цены
+                        </button>
+                    </div>
+                </div>
+                <aside class="col-md-4 instagram-description">
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
+                    <hr>
+                </aside>
+                <!-- ФЕЙСБУК РОЗДІЛ-->
+                <aside class="col-md-4 facebook-description">
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
+                    <hr>
+                </aside>
+                <div class="col-md-7 facebook-card main-card card rounded">
+                    <h5 class="card-header"><i class="fab fa-facebook" style="font-size: 30px;"></i><span class="title">Facebook</span></h5>
+                    <div class="card-body main-card-body">
+                        <ul class="card-text main-card-text">
+                            <li>Подписчики</li>
+                            <li>Лайки</li>
+                            <li>Просмотры</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary prices-btn" data-toggle="modal" data-target="#facebookModal">
+                            Цены
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ТЕЛЕГРАМ РОЗДІЛ-->
+                <div class="col-md-7 telegram-card main-card card">
+                    <h5 class="card-header"><i class="fab fa-telegram" style="font-size: 30px;"></i><span class="title">Telegram</span></h5>
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li>Подписчики</li>
+                            <li style="display: none;"></li>
+                            <li>Просмотры</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary prices-btn" data-toggle="modal" data-target="#telegramModal">
+                            Цены
+                        </button>
+                    </div>
+                </div>
+                <aside class="col-md-4 telegram-description">
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
+                    <hr>
+                </aside>
+            </div>
+        </section>
+    </div>
+
+    <!-- МОДАЛЬНЕ ВІКНО ІНСТАГРАМ -->
+    <div class="modal fade" id="instagramModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Инстаграм</h5>
+                    <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-instagram-subscribe">Подписчики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-instagram-likes">Лайки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-instagram-views">Просмотры</a>
+                    </li>
+                </ul>
+                <div class="modal-body tab-content" id="pills-tabContent">
+                    <!-- ПІДПИСНИКИ -->
+                    <div class="service-group row tab-pane fade show active" id="pills-instagram-subscribe">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/subscribe.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Боты</h5>
+                                    <p class="card-text">Возможны большие отписки.</p>
+                                    <table>
+                                        <tr>
+                                            <td>500</td>
+                                            <td>50 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>80 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2000</td>
+                                            <td>150 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5000</td>
+                                            <td>350 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10000</td>
+                                            <td>600 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/subscribe.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Подписчики ТОП качества</h5>
+                                    <p class="card-text">Аккаунты с аватарками, именами и тд.</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>140 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2000</td>
+                                            <td>260 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5000</td>
+                                            <td>580 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10000</td>
+                                            <td>580 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/subscribe.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Живые подписчики - МИР</h5>
+                                    <p class="card-text">Реальные люди, самые качественные подписчики!</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>230 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2000</td>
+                                            <td>440 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5000</td>
+                                            <td>1000 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10000</td>
+                                            <td>1800 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/subscribe.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Живые подписчики - УКРАИНА</h5>
+                                    <p class="card-text">Реальные люди, самые качественные подписчики!</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>320 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2000</td>
+                                            <td>610 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5000</td>
+                                            <td>1300 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10000</td>
+                                            <td>2400 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ЛАЙКИ -->
+                    <div class="service-group row tab-pane fade show" id="pills-instagram-likes">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/heart.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Лайки</h5>
+                                    <p class="card-text">Качественные!</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>40 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5000</td>
+                                            <td>180 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10000</td>
+                                            <td>340 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20000</td>
+                                            <td>620 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35000</td>
+                                            <td>1000 грн.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>50000</td>
+                                            <td>1250 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ПЕРЕГЛЯДИ -->
+                    <div class="service-group fade show row tab-pane" id="pills-instagram-views">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/views.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Просмотры</h5>
+                                    <p class="card-text">Реальные просмотры.</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>40 грн</td>
+                                        </tr>
+                                        <th>Просмотры видео на IGTV:</th>
+                                        <tr>
+                                            <td>2000</td>
+                                            <td>610 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <p>Для оформления заказа свяжитесь с нами:</p>
+                    <p>Viber: 0975443679</p>
+                    <p>Telegram: 0975443679</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- МОДАЛЬНЕ ВІКНО ФЕЙСБУК -->
+    <div class="modal fade" id="facebookModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Facebook</h5>
+                    <button type="button" class="btn close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-facebook-subscribe">Подписчики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-facebook-likes">Лайки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-facebook-views">Просмотры</a>
+                    </li>
+                </ul>
+                <div class="modal-body tab-content" id="pills-tabContent">
+                    <!-- ПІДПИСНИКИ -->
+                    <div class="service-group row tab-pane fade show active" id="pills-facebook-subscribe">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/subscribe.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Подписчики</h5>
+                                    <p class="card-text">БЛА БЛА БЛА</p>
+                                    <table>
+                                        <th>Группа:</th>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>400 грн.</td>
+                                        </tr>
+                                        <th>Профиль:</th>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>370 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ЛАЙКИ -->
+                    <div class="service-group row tab-pane fade show" id="pills-facebook-likes">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/heart.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Лайки</h5>
+                                    <p class="card-text">Качественные!</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>100 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-group fade show row tab-pane" id="pills-facebook-views">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/views.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Просмотры</h5>
+                                    <p class="card-text">Реальные просмотры.</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>40 грн</td>
+                                        </tr>
+                                        <th>Просмотры видео на IGTV:</th>
+                                        <tr>
+                                            <td>2000</td>
+                                            <td>610 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    вайбер: 345634646 телега: 6547567567
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- МОДАЛЬНЕ ВІКНО ТЕЛЕГРАМ -->
+    <div class="modal fade" id="telegramModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Telegram</h5>
+                    <button type="button" class="btn close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-telegram-subscribe">Подписчики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-telegram-views">Просмотры</a>
+                    </li>
+                </ul>
+                <div class="modal-body tab-content" id="pills-tabContent">
+                    <!-- ПІДПИСНИКИ -->
+                    <div class="service-group row tab-pane fade show active" id="pills-telegram-subscribe">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/subscribe.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Подписчики</h5>
+                                    <p class="card-text">Подписчики на ваш канал</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>130 грн.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ПЕРЕГЛЯДИ -->
+                    <div class="service-group fade show row tab-pane" id="pills-telegram-views">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="card">
+                                <img src="img/views.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Просмотры</h5>
+                                    <p class="card-text">Просмотры на постах канала (последние 5)</p>
+                                    <table>
+                                        <tr>
+                                            <td>1000</td>
+                                            <td>80 грн</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    вайбер: 345634646 телега: 6547567567
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПЕРЕВАГИ -->
+    <div class="container">
+        <section class="advantages">
+            <h2 class="text-center display-4">Преимущества работы с нами<hr></h2>
+            <div class="advantages-group row text-center justify-content-around">
+                <div class="advantages-group-item col-md-3 card">
+                    <img src="img/speed.png" class="card-img-top">
+                    <div class="card-body">
                         <h3 class="card-title">Скорость</h3>
                         <p class="card-text">Заказ будет выполнен максимально быстро!</p>
-                        </div>
                     </div>
-                    <div class="advantages-group-item col-md-3 card">
-                        <img src="img/speed.png" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Сила</h3>
-                            <p class="card-text">Ми сильны не только телом, но и духом!</p>
-                        </div>
+                </div>
+                <div class="advantages-group-item col-md-3 card">
+                    <img src="img/speed.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Сила</h3>
+                        <p class="card-text">Ми сильны не только телом, но и духом!</p>
                     </div>
-                    <div class="advantages-group-item col-md-3 card">
-                        <img src="img/speed.png" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Ловкость</h3>
-                            <p class="card-text">Если нахамите нам, мы вас найдем!</p>
-                        </div>
+                </div>
+                <div class="advantages-group-item col-md-3 card">
+                    <img src="img/speed.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Ловкость</h3>
+                        <p class="card-text">Если нахамите нам, мы вас найдем!</p>
                     </div>
-                    <div class="advantages-group-item col-md-3 card">
-                        <img src="img/speed.png" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Точность</h3>
-                            <p class="card-text">Если нахамите нам, мы вас найдем!</p>
-                        </div>
+                </div>
+                <div class="advantages-group-item col-md-3 card">
+                    <img src="img/speed.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Точность</h3>
+                        <p class="card-text">Если нахамите нам, мы вас найдем!</p>
                     </div>
                 </div>
             </div>
-          </div>
-      </section>
-
-      <!-- ПОСЛУГИ -->
-      <section class="services" id="services">
-        <h2 class="display-4 text-center mt-5">Услуги<hr></h2>
-        <div class="container p-0">
-          
-          <!-- ІНСТАГРАМ РОЗДІЛ-->
-          <div class="instagram-card main-card card">
-              <h5 class="card-header"><i class="fab fa-instagram"></i><span class="title">Инстаграм</span></h5>
-              <div class="card-body">
-                <ul class="card-text">
-                  <li>Подписчики</li>
-                  <li>Лайки</li>
-                  <li>Просмотры</li>
-                </ul>
-                <button type="button" class="btn prices-btn" data-toggle="modal" data-target="#instagramModal">
-                  Цены
-                </button>
-              </div>
-          </div>
-          <aside>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
-            <hr>
-          </aside>
-          <!-- ФЕЙСБУК РОЗДІЛ-->
-          <div class="facebook-card main-card card rounded">
-            <h5 class="card-header main-card-header"><i class="fab fa-facebook"></i>Facebook</h5>
-            <div class="card-body main-card-body">
-              <ul class="card-text main-card-text">
-                <li>Подписчики</li>
-                <li>Лайки</li>
-                <li>Просмотры</li>
-              </ul>
-              <button type="button" class="btn btn-primary prices-btn" data-toggle="modal" data-target="#facebookModal">
-                Цены
-              </button>
-            </div>
-          </div>
-          <aside>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
-            <hr>
-          </aside>
-          <!-- ТЕЛЕГРАМ РОЗДІЛ-->
-          <div class="telegram-card main-card card">
-            <h5 class="card-header"><i class="fab fa-telegram"></i>Telegram</h5>
-            <div class="card-body">
-              <ul class="card-text">
-                <li>Подписчики</li>
-                <li>Просмотры</li>
-              </ul>
-              <button type="button" class="btn btn-primary prices-btn" data-toggle="modal" data-target="#telegramModal">
-                Цены
-              </button>
-            </div>
-          </div>
-          <aside>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio voluptatem ipsam alias nesciunt ducimus nobis placeat non id maxime quis, facilis corrupti sit porro tempore ut, reiciendis earum? Tempore?</p>
-            <hr>
-          </aside>
-        </div>
         </section>
-        
-          <!-- МОДАЛЬНЕ ВІКНО ІНСТАГРАМ -->
-        <div class="modal fade" id="instagramModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Инстаграм</h5>
-                        <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <ul class="nav nav-pills mb-3" id="pills-tab">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-instagram-subscribe">Подписчики</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-instagram-likes">Лайки</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-instagram-views">Просмотры</a>
-                        </li>
-                    </ul>
-                    <div class="modal-body tab-content" id="pills-tabContent">
-                        <!-- ПІДПИСНИКИ -->
-                        <div class="service-group row tab-pane fade show active" id="pills-instagram-subscribe">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/subscribe.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Боты</h5>
-                                        <p class="card-text">Возможны большие отписки.</p>
-                                        <table>
-                                            <tr>
-                                                <td>500</td>
-                                                <td>50 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>80 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2000</td>
-                                                <td>150 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5000</td>
-                                                <td>350 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10000</td>
-                                                <td>600 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/subscribe.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Подписчики ТОП качества</h5>
-                                        <p class="card-text">Аккаунты с аватарками, именами и тд.</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>140 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2000</td>
-                                                <td>260 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5000</td>
-                                                <td>580 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10000</td>
-                                                <td>580 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/subscribe.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Живые подписчики - МИР</h5>
-                                        <p class="card-text">Реальные люди, самые качественные подписчики!</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>230 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2000</td>
-                                                <td>440 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5000</td>
-                                                <td>1000 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10000</td>
-                                                <td>1800 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/subscribe.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Живые подписчики - УКРАИНА</h5>
-                                        <p class="card-text">Реальные люди, самые качественные подписчики!</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>320 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2000</td>
-                                                <td>610 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5000</td>
-                                                <td>1300 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10000</td>
-                                                <td>2400 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ЛАЙКИ -->
-                        <div class="service-group row tab-pane fade show" id="pills-instagram-likes">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/heart.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Лайки</h5>
-                                        <p class="card-text">Качественные!</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>40 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5000</td>
-                                                <td>180 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10000</td>
-                                                <td>340 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>20000</td>
-                                                <td>620 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>35000</td>
-                                                <td>1000 грн.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>50000</td>
-                                                <td>1250 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ПЕРЕГЛЯДИ -->
-                        <div class="service-group fade show row tab-pane" id="pills-instagram-views">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/views.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Просмотры</h5>
-                                        <p class="card-text">Реальные просмотры.</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>40 грн</td>
-                                            </tr>
-                                            <th>Просмотры видео на IGTV:</th>
-                                            <tr>
-                                                <td>2000</td>
-                                                <td>610 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-foot">
-                        <p>Для оформления заказа свяжитесь с нами:</p>
-                        <p>Viber: 0975443679</p>
-                        <p>Telegram: 0975443679</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- МОДАЛЬНЕ ВІКНО ФЕЙСБУК -->
-        <div class="modal fade" id="facebookModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Facebook</h5>
-                        <button type="button" class="btn close" data-dismiss="modal">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <ul class="nav nav-pills mb-3" id="pills-tab">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-facebook-subscribe">Подписчики</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-facebook-likes">Лайки</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-facebook-views">Просмотры</a>
-                        </li>
-                    </ul>
-                    <div class="modal-body tab-content" id="pills-tabContent">
-                        <!-- ПІДПИСНИКИ -->
-                        <div class="service-group row tab-pane fade show active" id="pills-facebook-subscribe">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/subscribe.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Подписчики</h5>
-                                        <p class="card-text">БЛА БЛА БЛА</p>
-                                        <table>
-                                            <th>Группа:</th>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>400 грн.</td>
-                                            </tr>
-                                            <th>Профиль:</th>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>370 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ЛАЙКИ -->
-                        <div class="service-group row tab-pane fade show" id="pills-facebook-likes">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/heart.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Лайки</h5>
-                                        <p class="card-text">Качественные!</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>100 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-group fade show row tab-pane" id="pills-facebook-views">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/views.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Просмотры</h5>
-                                        <p class="card-text">Реальные просмотры.</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>40 грн</td>
-                                            </tr>
-                                            <th>Просмотры видео на IGTV:</th>
-                                            <tr>
-                                                <td>2000</td>
-                                                <td>610 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-foot">
-                        вайбер: 345634646 телега: 6547567567
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- МОДАЛЬНЕ ВІКНО ТЕЛЕГРАМ -->
-        <div class="modal fade" id="telegramModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Telegram</h5>
-                        <button type="button" class="btn close" data-dismiss="modal">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <ul class="nav nav-pills mb-3" id="pills-tab">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-telegram-subscribe">Подписчики</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-telegram-views">Просмотры</a>
-                        </li>
-                    </ul>
-                    <div class="modal-body tab-content" id="pills-tabContent">
-                        <!-- ПІДПИСНИКИ -->
-                        <div class="service-group row tab-pane fade show active" id="pills-telegram-subscribe">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/subscribe.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Подписчики</h5>
-                                        <p class="card-text">Подписчики на ваш канал</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>130 грн.</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ПЕРЕГЛЯДИ -->
-                        <div class="service-group fade show row tab-pane" id="pills-telegram-views">
-                            <div class="col-12 mb-4 text-center">
-                                <div class="card">
-                                    <img src="img/views.png" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Просмотры</h5>
-                                        <p class="card-text">Просмотры на постах канала (последние 5)</p>
-                                        <table>
-                                            <tr>
-                                                <td>1000</td>
-                                                <td>80 грн</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-foot">
-                        вайбер: 345634646 телега: 6547567567
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-      <!-- ВІДГУКИ -->
-      <section class="reviews m-5" id="reviews">
-        <h2 class="display-4 text-center mt-5">Отзывы<hr></h2>
-        <div class="container slider bg-light">
-            <section id="slides" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#slides" data-slide-to="0" class="active"></li>
-                    <li data-target="#slides" data-slide-to="1"></li>
-                    <li data-target="#slides" data-slide-to="2"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row no-gutters">
-                              <div class="col-md-4">
-                                <img src="img/client1.png" class="card-img" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Василий, 23 года</h5>
-                                  <p class="card-text">Я хуесос</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row no-gutters">
-                              <div class="col-md-4">
-                                <img src="img/client3.png" class="card-img" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Катя, 25 лет</h5>
-                                  <p class="card-text">Да ебись ты в рот</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row no-gutters">
-                              <div class="col-md-4">
-                                <img src="img/client2.png" class="card-img" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Кирилл, 90 лет</h5>
-                                  <p class="card-text">Та то пізда</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </section>
-        </div>
-      </section>
+    <!-- ІНСТРУКЦІЯ-->
+    <div class="instruction jumbotron jumbotron-fluid" id="instruction">
+        <div class="container">
 
-      
-      <!-- ПІДВАЛ -->
-      <footer class="bg-dark">
-        <div class="container d-flex justify-content-between">
-          <div class="logo">
-            <h2 class="display-3">Brand</h2>
-          </div>
-          <div class="social">
-            <h2 class="display-4">Наши контакты</h2>
-            <ul>
-              <li>53456456546</li>
-              <li>75647567566</li>
-              <li>56756756756</li>
+            <h2 class="display-4 text-center">Как сделать заказ?</h2>
+            <ul class="instruction-list">
+                <li class="instruction-list-item">Lorem ipsum dolor</li>
+                <li class="instruction-list-item">Піти нахуй</li>
+                <li class="instruction-list-item">а шо ти ше хотів</li>
+                <li class="instruction-list-item">бля</li>
             </ul>
-          </div>
+
         </div>
-      </footer>
+    </div>
 
+    <!-- ВІДГУКИ -->
+    <div class="container">
+        <section class="reviews m-5" id="reviews">
+            <h2 class="display-4 text-center mt-5">Отзывы<hr></h2>
+            <div class="slider bg-light">
+                <section id="slides" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                        <li data-target="#slides" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="img/client1.png" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Василий, 23 года</h5>
+                                            <p class="card-text">Я хуесос</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="img/client3.png" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Катя, 25 лет</h5>
+                                            <p class="card-text">Да ебись ты в рот</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="img/client2.png" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Кирилл, 90 лет</h5>
+                                            <p class="card-text">Та то пізда</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </section>
+            </div>
+        </section>
+    </div>
 
-      <button onclick="topFunction()" id="myBtn" title="Вверх"></button>  
+    <!-- ПІДВАЛ -->
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-between">
+            <div class="logo">
+                <h2 class="display-3">Brand</h2>
+            </div>
+            <div class="social">
+                <h2 class="display-4">Наши контакты</h2>
+                <ul>
+                    <li>53456456546</li>
+                    <li>75647567566</li>
+                    <li>56756756756</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Вверх"></button>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="js/myscript.js"></script>
-  </body>
+</body>
+
 </html>

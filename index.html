@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,10 +11,9 @@
 </head>
 
 <body>
-
     <!-- МЕНЮ -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"> InstaFrog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,26 +37,31 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#instruction" tabindex="-1" aria-disabled="true">Как заказать?</a>
-                </li>
             </ul>
         </div>
     </nav>
 
-
-    <div class="container text-center">
-        <div class="welcome-block">
+    <!-- ПРИВІТАННЯ -->
+        <div class="welcome-block text-center">
+            <div class="emoji-bg emoji7-bg"></div>
+            <div class="emoji-bg emoji8-bg"></div>
+            <div class="emoji-bg emoji1-bg"></div>
+            <div class="emoji-bg emoji2-bg"></div>
+            <div class="emoji-bg emoji3-bg"></div>
+            <div class="emoji-bg emoji4-bg"></div>
+            <div class="emoji-bg emoji5-bg"></div>
+            <div class="emoji-bg emoji6-bg"></div>
             <h2 class="display-3">InstaGrow</h2>
             <p class="lead">Быстрая накрутка подписчиков <br> инстаграм, фейсбук и телеграм. <br> А так же многое другое!</p>
+            <a href="#services"><img src="img/down.png"></a>
         </div>
-        <a href="#services"><img src="img/down.png"></a>
-    </div>
+        
+    
 
     <!-- ПОСЛУГИ -->
     <div class="container mt-0">
         <section class="services" id="services">
-            <h2 class="display-4 text-center mt-5">Услуги</h2>
+            <h2 class="heading text-center mt-5">Услуги</h2>
             <hr>
             <div class="row justify-content-between">
 
@@ -94,7 +98,7 @@
                             <li>Лайки</li>
                             <li>Просмотры</li>
                         </ul>
-                        <button type="button" class="btn btn-primary prices-btn" data-toggle="modal" data-target="#facebookModal">
+                        <button type="button" class="btn prices-btn" data-toggle="modal" data-target="#facebookModal">
                             Цены
                         </button>
                     </div>
@@ -109,7 +113,7 @@
                             <li style="display: none;"></li>
                             <li>Просмотры</li>
                         </ul>
-                        <button type="button" class="btn btn-primary prices-btn" data-toggle="modal" data-target="#telegramModal">
+                        <button type="button" class="btn prices-btn" data-toggle="modal" data-target="#telegramModal">
                             Цены
                         </button>
                     </div>
@@ -322,10 +326,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-foot">
+                <div class="modal-foot text-center">
                     <p>Для оформления заказа свяжитесь с нами:</p>
-                    <p>Viber: 0975443679</p>
-                    <p>Telegram: 0975443679</p>
+                    Позвонить: 
+                    <a class="call" title="Позвонить" href="tel:380984747515">+380984747515</a>
+                    <p class="message">Написать: 
+                        <a class="viber-desktop" title="Viber" href="viber://chat?number=380984747515"><i class="fab fa-viber" style="font-size: 40px;"></i></a>
+                        <a class="viber-mobile" title="Viber" href="viber://add?number=380984747515"><i class="fab fa-viber" style="font-size: 40px;"></i></a>
+                        <a title="Telegram" href="tg://resolve?domain=sadness_is_not_the_end"><i class="fab fa-telegram" style="font-size: 40px;"></i></a></p>
                 </div>
             </div>
         </div>
@@ -487,61 +495,46 @@
     </div>
 
     <!-- ПЕРЕВАГИ -->
-    <div class="container">
+    <div class="advantages-container">
         <section class="advantages">
-            <h2 class="text-center display-4">Преимущества работы с нами<hr></h2>
+            <h2 class="heading text-center">Преимущества работы с нами<hr class="w-75"></h2>
             <div class="advantages-group row text-center justify-content-around">
-                <div class="advantages-group-item col-md-3 card">
+                <div class="advantages-group-item col-xl-3 card">
+                    <img src="img/cup.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Качество</h3>
+                        <p class="card-text">Мы используем собственные базы для накрутки, обезпечиваю высочайшее качество услуг.</p>
+                    </div>
+                </div>
+                <div class="advantages-group-item col-xl-3 card">
+                    <img src="img/value.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Результат</h3>
+                        <p class="card-text">Вовлечение аудитории после использования нашего сервиса.</p>
+                    </div>
+                </div>
+                <div class="advantages-group-item col-xl-3 card">
+                    <img src="img/shield.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Безопасность</h3>
+                        <p class="card-text">Только безопасные методы накрутки. Без банов и санкций со стороны инстаграма.</p>
+                    </div>
+                </div>
+                <div class="advantages-group-item col-xl-3 card">
                     <img src="img/speed.png" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Скорость</h3>
-                        <p class="card-text">Заказ будет выполнен максимально быстро!</p>
-                    </div>
-                </div>
-                <div class="advantages-group-item col-md-3 card">
-                    <img src="img/speed.png" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Сила</h3>
-                        <p class="card-text">Ми сильны не только телом, но и духом!</p>
-                    </div>
-                </div>
-                <div class="advantages-group-item col-md-3 card">
-                    <img src="img/speed.png" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Ловкость</h3>
-                        <p class="card-text">Если нахамите нам, мы вас найдем!</p>
-                    </div>
-                </div>
-                <div class="advantages-group-item col-md-3 card">
-                    <img src="img/speed.png" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Точность</h3>
-                        <p class="card-text">Если нахамите нам, мы вас найдем!</p>
+                        <p class="card-text">Приём заказа в максимально короткие сроки.</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- ІНСТРУКЦІЯ-->
-    <div class="instruction jumbotron jumbotron-fluid" id="instruction">
-        <div class="container">
-
-            <h2 class="display-4 text-center">Как сделать заказ?</h2>
-            <ul class="instruction-list">
-                <li class="instruction-list-item">Lorem ipsum dolor</li>
-                <li class="instruction-list-item">Піти нахуй</li>
-                <li class="instruction-list-item">а шо ти ше хотів</li>
-                <li class="instruction-list-item">бля</li>
-            </ul>
-
-        </div>
-    </div>
-
     <!-- ВІДГУКИ -->
     <div class="container">
-        <section class="reviews m-5" id="reviews">
-            <h2 class="display-4 text-center mt-5">Отзывы<hr></h2>
+        <section class="reviews" id="reviews">
+            <h2 class="heading text-center mt-5">Отзывы<hr></h2>
             <div class="slider bg-light">
                 <section id="slides" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
@@ -613,10 +606,10 @@
     <footer class="bg-dark">
         <div class="container d-flex justify-content-between">
             <div class="logo">
-                <h2 class="display-3">Brand</h2>
+                <img src="img/logo.png">
             </div>
             <div class="social">
-                <h2 class="display-4">Наши контакты</h2>
+                <h2>Наши контакты</h2>
                 <ul>
                     <li>53456456546</li>
                     <li>75647567566</li>

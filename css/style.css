@@ -4,6 +4,13 @@
     }
 }
 
+@keyframes appears {
+    to {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+}
+
 body {
     font-size: 16px;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -21,11 +28,15 @@ hr {
     border: none;
 }
 
+.heading {
+    font-size: 50px;
+}
+
 #mainNav {
     width: 100%;
     z-index: 99;
     min-height: 75px;
-    background-color: black !important;
+    background-color: #100000;
 }
 
 #mainNav .logo {
@@ -42,32 +53,85 @@ hr {
     color: rgb(150, 198, 226);
 }
 
+.emoji-bg {
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+.emoji1-bg {
+    top: 60%;
+    right: 7%;
+    background-image: url("../img/emoji1-bg.png");
+    animation: appears 3s alternate infinite;
+}
+
+.emoji2-bg {
+    top: 80%;
+    right: 15%;
+    background-image: url("../img/emoji2-bg.png");
+    animation: appears 1.2s alternate infinite;
+}
+
+.emoji3-bg {
+    top: 15%;
+    left: 7%;
+    background-image: url("../img/emoji3-bg.png");
+    animation: appears 1.8s alternate infinite;
+}
+
+.emoji4-bg {
+    top: 35%;
+    left: 15%;
+    background-image: url("../img/emoji4-bg.png");
+    animation: appears 3s alternate infinite;
+}
+
+.emoji5-bg {
+    top: 55%;
+    left: 7%;
+    background-image: url("../img/emoji5-bg.png");
+    animation: appears 2.2s alternate infinite;
+}
+
+.emoji6-bg {
+    top: 75%;
+    left: 15%;
+    background-image: url("../img/emoji6-bg.png");
+    animation: appears 1.6s alternate infinite;
+}
+
+.emoji7-bg {
+    top: 20%;
+    right: 7%;
+    background-image: url("../img/emoji7-bg.png");
+    animation: appears 1.5s alternate infinite;
+}
+
+.emoji8-bg {
+    top: 40%;
+    right: 15%;
+    background-image: url("../img/emoji8-bg.png");
+    animation: appears 2s alternate infinite;
+}
 
 .welcome-block {
+    position: relative;
     color: white;
     padding-top: 300px;
-    padding-bottom: 280px;
 }
 
-.welcome-block + a img {
-    position: relative;
+.welcome-block a img {
     animation: down 0.5s infinite alternate ease-in;
     width: 40px;
-}
-
-
-.advantages img {
-    max-width: 200px;
-    margin: 0 auto;
-}
-
-.advantages-group-item {
-    background-color: transparent;
-    border: none;
+    margin-top: 270px;
 }
 
 .services {
-    margin: 100px 0;
+    margin-top: 100px;
 }
 
 .services .row {
@@ -196,15 +260,20 @@ hr {
 }
 
 .facebook-card .card-header{
-    background-color: #063852;
+    background-color: #02afae;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .facebook-card .card-body{
-    background-color: #0b486986;
+    background-color: #02afaf48;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.facebook-card .prices-btn {
+    background-color: #02afae;
+    color: white;
 }
 
 .telegram-card {
@@ -212,15 +281,20 @@ hr {
 }
 
 .telegram-card .card-header{
-    background-color: #2f2f28;
+    background-color:#612697;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .telegram-card .card-body{
-    background-color: #2f2f28d7;
+    background-color: #60269759;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.telegram-card .prices-btn {
+    background-color: #612697;
+    color: white;
 }
 
 .service-group img {
@@ -263,12 +337,44 @@ hr {
 }
 
 .modal-foot {
-    border: 2px solid brown;
+    border-top: 1px solid black;
+    font-size: 18px;
+    padding: 10px;
 }
 
-.instruction {
-    background-color: #F0FFF0;
+.modal-foot .call{
+    color: black;
 }
+
+.modal-foot .viber-desktop, 
+.modal-foot .viber-mobile {
+    color: #7360f2;
+} 
+
+.advantages-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.advantages {
+    margin-top: 50px;
+}
+
+.advantages img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.advantages-group-item {
+    background-color: transparent;
+    border: none;
+    margin-top: 50px;
+}
+
+.advantages .card-title {
+    font-size: 43px;
+}
+
 
 
 .reviews .card {
@@ -287,6 +393,16 @@ footer {
     width: 100%;
 }
 
+footer .logo {
+    width: 150px;
+    height: 150px;
+    align-self: flex-end;
+}
+
+footer .logo img{
+    width: 150px;
+    height: 150px;
+}
 
 #myBtn {
     display: none;
@@ -299,11 +415,11 @@ footer {
     outline: none;
     cursor: pointer;
     padding: 25px;
-    background-color: transparent;
+    background-color: white;
     background-image: url("../img/up.png");
     background-repeat: no-repeat;
-    background-size: 40px;
-    border-radius: 4px;
+    background-size: 50px;
+    border-radius: 50%;
     transition: 0.5s;
 }
   
@@ -345,4 +461,85 @@ footer {
         order: 6;
     }
 
+    .welcome-block a img {
+        margin-top: 100px;
+    }
+
+    .emoji-bg {
+        width: 70px;
+        height: 70px;
+        background-size: 70px;
+    }
+    
+    .emoji1-bg {
+        top: 10%;
+        left: 7%;
+        background-image: url("../img/emoji1-bg.png");
+        animation: appears 3s alternate infinite;
+    }
+    
+    .emoji2-bg {
+        top: 20%;
+        left: 30%;
+        background-image: url("../img/emoji2-bg.png");
+        animation: appears 1.2s alternate infinite;
+    }
+    
+    .emoji3-bg {
+        top: 85%;
+        left: 5%;
+        background-image: url("../img/emoji3-bg.png");
+        animation: appears 1.8s alternate infinite;
+    }
+    
+    .emoji4-bg {
+        top: 95%;
+        left: 20%;
+        background-image: url("../img/emoji4-bg.png");
+        animation: appears 3s alternate infinite;
+    }
+    
+    .emoji5-bg {
+        top: 85%;
+        left: 80%;
+        background-image: url("../img/emoji5-bg.png");
+        animation: appears 2.2s alternate infinite;
+    }
+    
+    .emoji6-bg {
+        top: 95%;
+        left: 65%;
+        background-image: url("../img/emoji6-bg.png");
+        animation: appears 1.6s alternate infinite;
+    }
+    
+    .emoji7-bg {
+        top: 10%;
+        left: 60%;
+        background-image: url("../img/emoji7-bg.png");
+        animation: appears 1.5s alternate infinite;
+    }
+    
+    .emoji8-bg {
+        top: 20%;
+        left: 80%;
+        background-image: url("../img/emoji8-bg.png");
+        animation: appears 2s alternate infinite;
+    }
 }
+
+@media (max-width: 1200px) {
+    .viber-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .viber-desktop {
+        display: inline-block;
+    }
+    .viber-mobile {
+        display: none;
+    }
+}
+

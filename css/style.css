@@ -4,6 +4,12 @@
     }
 }
 
+@keyframes easy-down {
+    to {
+        transform: translateY(5px);
+    }
+}
+
 @keyframes appears {
     to {
         opacity: 1;
@@ -35,8 +41,12 @@ hr {
 #mainNav {
     width: 100%;
     z-index: 99;
-    min-height: 75px;
     background-color: #100000;
+    position: fixed;
+    transition: 0.3s;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 75px;
 }
 
 #mainNav .logo {
@@ -47,10 +57,13 @@ hr {
     color: snow;
     font-size: 19px;
     font-weight: lighter;
+    height: 75px;
+    padding-top: 23px;
 }
 
 #mainNav .nav-link:hover {
-    color: rgb(150, 198, 226);
+    background-color: white;
+    color: black;
 }
 
 .emoji-bg {
@@ -121,14 +134,31 @@ hr {
 .welcome-block {
     position: relative;
     color: white;
-    padding-top: 300px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.welcome-block .lead {
+    font-size: 25px;
+}
+
+.welcome-block h2 {
+    font-size: 60px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.welcome-logo {
+    animation: easy-down 2s infinite alternate linear;
+    width: 200px;
 }
 
 .welcome-block a img {
     animation: down 0.5s infinite alternate ease-in;
     width: 40px;
-    margin-top: 270px;
+    margin-top: 230px;
 }
+
 
 .services {
     margin-top: 100px;
@@ -137,12 +167,6 @@ hr {
 .services .row {
     margin-top: 30px;
 }
-
-.services .container {
-    position: relative;
-    margin-top: 50px;
-}
-
 
 .services .main-card {
     width: 48%;
@@ -154,8 +178,9 @@ hr {
 }
 
 .services aside {
-    margin-top: 35px;
     font-size: 20px;
+    text-align: justify;
+    margin-top: 35px;
 }
 
 .btn:focus, .btn:active {
@@ -183,7 +208,9 @@ hr {
     transform: translateX(-50%);
     border-radius: 10px;
     width: 100px;
+    font-size: 18px;
 }
+
 
 .main-card .card-body {
     padding-top: 50px;
@@ -207,6 +234,10 @@ hr {
     height: 100px;
     background-image: url("../img/subscribe.png");
     background-size: 100px;
+}
+
+.main-card .card-text li:nth-child(2) {
+    text-align: center;
 }
 
 .main-card .card-text li:nth-child(2)::before {
@@ -241,7 +272,7 @@ hr {
 }
 
 .instagram-card .card-body{
-    background-color: #f9dd2450;
+    background-color: #f9dd243d;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -254,26 +285,41 @@ hr {
     background-color: #c9b21d;
 }
 
+#instagramModal .down-arrow {
+    position: absolute;
+    z-index: 99;
+    bottom: 20%;
+    right: 10px;
+    animation: down 0.3s infinite alternate ease-in;
+}
+#instagramModal .down-arrow img{
+    width: 50px;
+}
+
 .facebook-card {
     align-self: flex-end;
     color: rgb(242, 248, 217);
 }
 
 .facebook-card .card-header{
-    background-color: #02afae;
+    background-color: #191970;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .facebook-card .card-body{
-    background-color: #02afaf48;
+    background-color: #1919703d;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .facebook-card .prices-btn {
-    background-color: #02afae;
+    background-color: #191970;
     color: white;
+}
+
+.facebook-card .prices-btn:hover {
+    background-color: #11114b;
 }
 
 .telegram-card {
@@ -281,20 +327,24 @@ hr {
 }
 
 .telegram-card .card-header{
-    background-color:#612697;
+    background-color:#008080;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .telegram-card .card-body{
-    background-color: #60269759;
+    background-color: #00808036;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .telegram-card .prices-btn {
-    background-color: #612697;
+    background-color: #008080;
     color: white;
+}
+
+.telegram-card .prices-btn:hover {
+    background-color: #015757;
 }
 
 .service-group img {
@@ -320,20 +370,23 @@ hr {
 .modal .nav {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
     margin-bottom: 0 !important;
 }
 
 .modal .nav-link {
-    background-color: #c73434;
+    background-color: #90EE90;
     color: black;
     padding: 15px;
     font-weight: lighter;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .modal .nav-link.active {
-    background-color: #af1c1c;
+    background-color: #32CD32;
     color: black;
+    box-shadow: 0 0 0 4px black;
 }
 
 .modal-foot {
@@ -343,7 +396,7 @@ hr {
 }
 
 .modal-foot .call{
-    color: black;
+    color: rgb(122, 1, 1);
 }
 
 .modal-foot .viber-desktop, 
@@ -351,13 +404,27 @@ hr {
     color: #7360f2;
 } 
 
-.advantages-container {
+.modal-foot .viber-desktop:hover, 
+.modal-foot .viber-mobile:hover {
+    color: #5644d1;
+} 
+
+.modal-foot .telegram-message {
+    margin-left: 10px;
+}
+
+.modal-foot .write-us {
+    margin-top: 10px;
+}
+
+.container-75 {
     margin: 0 auto;
     width: 75%;
 }
 
 .advantages {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .advantages img {
@@ -372,36 +439,131 @@ hr {
 }
 
 .advantages .card-title {
-    font-size: 43px;
+    font-size: 43px !important;
 }
 
+.advantages .card-text {
+    font-size: 20px !important;
+}
 
-
-.reviews .card {
-    margin: 0 auto;
+.reviews {
+    margin-bottom: 100px;
 }
 
 .reviews img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 600px;
+    border-radius: 50px;
+}
+
+.slider {
+    background-color: rgba(128, 128, 128, 0.192) !important;
+    border-radius: 30px;
+}
+
+.reviews .carousel-item {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reviews .carousel-indicators {
+    position: relative;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-indicators li[data-target="#slides"] {
+    filter: invert(100%);
+    height: 10px !important;
+    width: 10px !important;
     border-radius: 50%;
 }
 
 footer {
-    height: 200px;
+    height: 250px;
     color: white;
     width: 100%;
+    background-color: black;
+}
+
+footer .container-75 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 footer .logo {
     width: 150px;
     height: 150px;
-    align-self: flex-end;
+    position: relative;
+}
+
+footer .goodbye-block p{
+    font-size: 72px;
+    background: -webkit-linear-gradient(90deg, rgba(36,0,16,1) 0%, #fdda8a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 
 footer .logo img{
     width: 150px;
     height: 150px;
+    transition: 1.5s;
+}
+
+footer .logo .logo-name {
+    transition: 1.5s;
+}
+
+footer .logo .bonus-message {
+    top: 100%;
+    transition: 1.5s;
+    transform: scale(0);
+}
+
+footer .logo img:hover {
+    transform: scale(0.3) rotate(360deg);
+}
+
+footer .logo img:hover ~ .logo-name{
+    transform: scale(0);
+}
+
+footer .logo img:hover ~ .bonus-message{
+    transform: scale(1) translateY(-30px);
+    background-color: red;
+}
+
+footer .call{
+    font-size: 25px;
+}
+
+footer .social a {
+    transition: 0.2s;
+}
+
+footer .social a:hover {
+    filter: brightness(0.5);
+}
+
+
+
+#contacts a {
+    color: white !important;
+}
+
+footer .social {
+    margin-top: 20px;
+}
+
+.footer-telegram {
+    margin-left: 30px;
 }
 
 #myBtn {
@@ -426,8 +588,6 @@ footer .logo img{
 #myBtn:hover {
     transform: scale(1.2);
 }
-  
-
 
 
 @media (max-width: 767px) {
@@ -525,6 +685,10 @@ footer .logo img{
         left: 80%;
         background-image: url("../img/emoji8-bg.png");
         animation: appears 2s alternate infinite;
+    }
+
+    footer .goodbye-block p{
+        display: none;
     }
 }
 

@@ -22,6 +22,8 @@ body {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     font-family: 'Vollkorn', serif;
     font-weight: 600;
+    width: 100%;
+    height: 100%;
 }
 
 html {
@@ -46,7 +48,6 @@ hr {
     transition: 0.3s;
     padding-top: 0;
     padding-bottom: 0;
-    min-height: 75px;
 }
 
 #mainNav .logo {
@@ -57,13 +58,15 @@ hr {
     color: snow;
     font-size: 19px;
     font-weight: lighter;
-    height: 75px;
-    padding-top: 23px;
+    line-height: 75px;
+    transition: 0.1s;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #mainNav .nav-link:hover {
-    background-color: white;
     color: black;
+    background-color: whitesmoke;
 }
 
 .emoji-bg {
@@ -159,7 +162,6 @@ hr {
     margin-top: 230px;
 }
 
-
 .services {
     margin-top: 100px;
 }
@@ -180,7 +182,7 @@ hr {
 .services aside {
     font-size: 20px;
     text-align: justify;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .btn:focus, .btn:active {
@@ -209,6 +211,7 @@ hr {
     border-radius: 10px;
     width: 100px;
     font-size: 18px;
+    font-weight: 600;
 }
 
 
@@ -224,6 +227,7 @@ hr {
     height: 100px;
     font-size: 18px;
     padding: 0;
+    font-weight: 600;
 }
 
 .main-card .card-text li:first-child::before {
@@ -252,6 +256,16 @@ hr {
 }
 
 .main-card .card-text li:nth-child(3)::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    background-image: url("../img/comment.png");
+}
+
+.main-card .card-text li:nth-child(4)::before {
     content: "";
     display: block;
     margin: 0 auto;
@@ -358,13 +372,31 @@ hr {
     height: 550px;
 }
 
-.service-group table {
+.service-group .prices {
+    list-style: none;
     margin: 0 auto;
+    padding: 0;
 }
 
-.service-group table td{
+.service-group .prices li{
     border-bottom: 2px solid black;
-    padding: 10px;
+    width: 170px;
+    margin: 15px auto;
+    white-space: pre;
+}
+
+.service-group .prices div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.service-group .prices div i{
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .modal .nav {
@@ -375,7 +407,7 @@ hr {
 }
 
 .modal .nav-link {
-    background-color: #90EE90;
+    background-color: #98ff98;
     color: black;
     padding: 15px;
     font-weight: lighter;
@@ -384,7 +416,7 @@ hr {
 }
 
 .modal .nav-link.active {
-    background-color: #32CD32;
+    background-color: #72c572;
     color: black;
     box-shadow: 0 0 0 4px black;
 }
@@ -423,7 +455,7 @@ hr {
 }
 
 .advantages {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -503,18 +535,20 @@ footer .logo {
     position: relative;
 }
 
-footer .goodbye-block p{
-    font-size: 72px;
-    background: -webkit-linear-gradient(90deg, rgba(36,0,16,1) 0%, #fdda8a 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-}
-
 footer .logo img{
     width: 150px;
     height: 150px;
     transition: 1.5s;
+}
+
+footer .goodbye-block p{
+    font-size: 72px;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 
 footer .logo .logo-name {
@@ -548,11 +582,14 @@ footer .social a {
     transition: 0.2s;
 }
 
+.fa-telegram,
+.fa-viber {
+    font-size: 50px;
+}
+
 footer .social a:hover {
     filter: brightness(0.5);
 }
-
-
 
 #contacts a {
     color: white !important;
@@ -577,69 +614,49 @@ footer .social {
     outline: none;
     cursor: pointer;
     padding: 25px;
-    background-color: white;
+    background-color: transparent;
     background-image: url("../img/up.png");
     background-repeat: no-repeat;
+    background-clip: border-box;
+    width: 50px;
+    height: 50px;
     background-size: 50px;
-    border-radius: 50%;
     transition: 0.5s;
 }
   
 #myBtn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
-@media (max-width: 767px) {
-    .services .main-card {
-        width: 100%;
-        margin-bottom: 0;
-    }
 
+
+
+
+
+@media (max-width: 768px) {
     .services aside {
         margin-top: 0;
-        margin-bottom: 70px;
     }
+}
 
-    .instagram-card {
-        order: 1;
-    }
-    .instagram-description {
-        order: 2;
-        
-    }
-    .facebook-card {
-        order: 3;
-    }
-    .facebook-description {
-        order: 4;
-    }
-    .telegram-card {
-        order: 5;
-    }
-    .telegram-description {
-        order: 6;
-    }
-
-    .welcome-block a img {
-        margin-top: 100px;
-    }
+@media (max-width: 576px) {
 
     .emoji-bg {
-        width: 70px;
-        height: 70px;
-        background-size: 70px;
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
     }
     
     .emoji1-bg {
-        top: 10%;
+        top: 20%;
         left: 7%;
         background-image: url("../img/emoji1-bg.png");
         animation: appears 3s alternate infinite;
     }
     
     .emoji2-bg {
-        top: 20%;
+        top: 16%;
         left: 30%;
         background-image: url("../img/emoji2-bg.png");
         animation: appears 1.2s alternate infinite;
@@ -674,26 +691,170 @@ footer .social {
     }
     
     .emoji7-bg {
-        top: 10%;
+        top: 20%;
         left: 60%;
         background-image: url("../img/emoji7-bg.png");
         animation: appears 1.5s alternate infinite;
     }
     
     .emoji8-bg {
-        top: 20%;
+        top: 16%;
         left: 80%;
         background-image: url("../img/emoji8-bg.png");
         animation: appears 2s alternate infinite;
     }
 
-    footer .goodbye-block p{
-        display: none;
+    .heading {
+        font-size: 40px;
+    }
+
+    .services .main-card {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .services aside {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+
+    .instagram-card {
+        order: 1;
+    }
+    .instagram-description {
+        order: 2;
+    }
+    .facebook-card {
+        order: 3;
+    }
+    .facebook-description {
+        order: 4;
+    }
+    .telegram-card {
+        order: 5;
+    }
+    .telegram-description {
+        order: 6;
+    }
+
+    
+
+    #instagramModal .down-arrow {
+        bottom: 40%;
+    }
+
+    #myBtn {
+        bottom: 0;
+        right: 5%;
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+
+    footer .call{
+        font-size: 20px;
+    }
+
+    footer .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    footer .logo img{
+        width: 100px;
+        height: 100px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1378px) {
+    .welcome-block .lead {
+        font-size: 20px;
+    }
+    
+    .welcome-block h2 {
+        font-size: 40px;
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+    
+    .welcome-logo {
+        animation: easy-down 2s infinite alternate linear;
+        width: 100px;
+    }
+
+    .welcome-block a img {
+        margin-top: 100px;
+    }
+
+    #mainNav .nav-link {
+        text-align: center;
+    }
+
+    #mainNav .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-toggler:focus, .navbar-toggler:active {
+        outline: none;
+        box-shadow: none;
+    }
+
     .viber-desktop {
+        display: none;
+    }
+
+    .main-card .card-text li:nth-child(1)::before,
+    .main-card .card-text li:nth-child(2)::before,
+    .main-card .card-text li:nth-child(3)::before,
+    .main-card .card-text li:nth-child(4)::before {
+        width: 70px;
+        height: 70px;
+        background-size: 70px;
+    }
+
+    .main-card .card-text li {
+        font-size: 14px;
+    }
+
+    .modal-foot {
+        padding-bottom: 0;
+    }
+
+    .modal-foot .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .modal-foot .fa-viber {
+        margin-left: 10px;
+    }
+
+    .modal-foot .fa-telegram,
+    .modal-foot .fa-viber {
+        font-size: 40px;
+    }
+
+    .modal-foot p:first-of-type {
+        padding: 0;
+        margin: 0;
+    }
+
+    .modal .nav-link {
+        padding: 8px;
+        margin-bottom: 3px;
+    }
+
+    .modal .nav-link.active {
+        box-shadow: 0 0 0 2px black;
+    }
+
+    .advantages .card-title {
+        font-size: 30px !important;
+    }
+
+    footer .goodbye-block p{
         display: none;
     }
 }
@@ -704,6 +865,9 @@ footer .social {
     }
     .viber-mobile {
         display: none;
+    }
+    footer .goodbye-block p{
+        display: inline;
     }
 }
 

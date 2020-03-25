@@ -26,3 +26,32 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+var modalBody = document.querySelectorAll('.modal-body');
+var modalNavBtn = document.querySelectorAll('.modal .nav-link');
+
+for (let i = 0; i < modalNavBtn.length; i++) {
+  modalNavBtn[i].addEventListener('click', function() {
+    if (i <= 3) {
+      topModalFunction(0);
+    }
+    else if (i > 3 && i <= 7) {
+      topModalFunction(1);
+    }
+    else {
+      topModalFunction(2);
+    }
+  });
+}
+
+function topModalFunction(counter) {
+  modalBody[counter].scrollTop = 0;
+}
+
+
+
+
+//СХОВАТИ МЕНЮ ПРИ КЛІКУ
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});

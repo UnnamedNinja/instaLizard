@@ -1,22 +1,3 @@
-@keyframes down {
-    to {
-        transform: translateY(15px);
-    }
-}
-
-@keyframes easy-down {
-    to {
-        transform: translateY(5px);
-    }
-}
-
-@keyframes appears {
-    to {
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-}
-
 body {
     font-size: 16px;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -43,15 +24,15 @@ hr {
 #mainNav {
     width: 100%;
     z-index: 99;
-    background-color: #100000;
+    background-color: #0a042b;
     position: fixed;
     transition: 0.3s;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 5px 0 10px;
 }
 
 #mainNav .logo {
     width: 50px;
+    margin-right: 7px;
 }
 
 #mainNav .nav-link {
@@ -85,81 +66,28 @@ hr {
     animation: appears 3s alternate infinite;
 }
 
-.emoji2-bg {
-    top: 80%;
-    right: 15%;
-    background-image: url("../img/emoji2-bg.png");
-    animation: appears 1.2s alternate infinite;
-}
-
-.emoji3-bg {
-    top: 15%;
-    left: 7%;
-    background-image: url("../img/emoji3-bg.png");
-    animation: appears 1.8s alternate infinite;
-}
-
-.emoji4-bg {
-    top: 35%;
-    left: 15%;
-    background-image: url("../img/emoji4-bg.png");
-    animation: appears 3s alternate infinite;
-}
-
-.emoji5-bg {
-    top: 55%;
-    left: 7%;
-    background-image: url("../img/emoji5-bg.png");
-    animation: appears 2.2s alternate infinite;
-}
-
-.emoji6-bg {
-    top: 75%;
-    left: 15%;
-    background-image: url("../img/emoji6-bg.png");
-    animation: appears 1.6s alternate infinite;
-}
-
-.emoji7-bg {
-    top: 20%;
-    right: 7%;
-    background-image: url("../img/emoji7-bg.png");
-    animation: appears 1.5s alternate infinite;
-}
-
-.emoji8-bg {
-    top: 40%;
-    right: 15%;
-    background-image: url("../img/emoji8-bg.png");
-    animation: appears 2s alternate infinite;
-}
-
 .welcome-block {
     position: relative;
     color: white;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 100px;
 }
 
 .welcome-block .lead {
-    font-size: 25px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.welcome-block h2,
+.welcome-block .lead {
+    font-weight: bold;
+    color: white;
 }
 
 .welcome-block h2 {
     font-size: 60px;
     padding-top: 10px;
     margin-bottom: 0;
-}
-
-.welcome-logo {
-    animation: easy-down 2s infinite alternate linear;
-    width: 200px;
-}
-
-.welcome-block a img {
-    animation: down 0.5s infinite alternate ease-in;
-    width: 40px;
-    margin-top: 230px;
 }
 
 .services {
@@ -304,6 +232,7 @@ hr {
     z-index: 99;
     bottom: 20%;
     right: 10px;
+    width: 50px;
     animation: down 0.3s infinite alternate ease-in;
 }
 #instagramModal .down-arrow img{
@@ -361,93 +290,6 @@ hr {
     background-color: #015757;
 }
 
-.service-group img {
-    width: 150px;
-    margin-top: 15px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.service-group .card {
-    height: 550px;
-}
-
-.service-group .prices {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.service-group .prices li{
-    border-bottom: 2px solid black;
-    width: 170px;
-    margin: 15px auto;
-    white-space: pre;
-}
-
-.service-group .prices div {
-    display: inline-block;
-    margin-bottom: 8px;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 300px;
-    padding-top: 5px;
-}
-
-.service-group .prices div i{
-    font-weight: bolder;
-    font-size: 18px;
-}
-
-.modal .nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 0 !important;
-}
-
-.modal .nav-link {
-    background-color: #98ff98;
-    color: black;
-    padding: 15px;
-    font-weight: lighter;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-.modal .nav-link.active {
-    background-color: #72c572;
-    color: black;
-    box-shadow: 0 0 0 4px black;
-}
-
-.modal-foot {
-    border-top: 1px solid black;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.modal-foot .call{
-    color: rgb(122, 1, 1);
-}
-
-.modal-foot .viber-desktop, 
-.modal-foot .viber-mobile {
-    color: #7360f2;
-} 
-
-.modal-foot .viber-desktop:hover, 
-.modal-foot .viber-mobile:hover {
-    color: #5644d1;
-} 
-
-.modal-foot .telegram-message {
-    margin-left: 10px;
-}
-
-.modal-foot .write-us {
-    margin-top: 10px;
-}
 
 .container-75 {
     margin: 0 auto;
@@ -519,7 +361,7 @@ footer {
     height: 250px;
     color: white;
     width: 100%;
-    background-color: black;
+    background-color: #0a042b;
 }
 
 footer .container-75 {
@@ -528,6 +370,8 @@ footer .container-75 {
     align-items: center;
     height: 100%;
 }
+
+
 
 footer .logo {
     width: 150px;
@@ -541,8 +385,12 @@ footer .logo img{
     transition: 1.5s;
 }
 
+footer .goodbye-block {
+    margin-left: 70px;
+}
+
 footer .goodbye-block p{
-    font-size: 72px;
+    font-size: 70px;
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
@@ -603,6 +451,8 @@ footer .social {
     margin-left: 30px;
 }
 
+
+
 #myBtn {
     display: none;
     position: fixed;
@@ -634,137 +484,9 @@ footer .social {
 
 
 
-@media (max-width: 768px) {
-    .services aside {
-        margin-top: 0;
-    }
-}
 
-@media (max-width: 576px) {
 
-    .emoji-bg {
-        width: 50px;
-        height: 50px;
-        background-size: 50px;
-    }
-    
-    .emoji1-bg {
-        top: 20%;
-        left: 7%;
-        background-image: url("../img/emoji1-bg.png");
-        animation: appears 3s alternate infinite;
-    }
-    
-    .emoji2-bg {
-        top: 16%;
-        left: 30%;
-        background-image: url("../img/emoji2-bg.png");
-        animation: appears 1.2s alternate infinite;
-    }
-    
-    .emoji3-bg {
-        top: 85%;
-        left: 5%;
-        background-image: url("../img/emoji3-bg.png");
-        animation: appears 1.8s alternate infinite;
-    }
-    
-    .emoji4-bg {
-        top: 95%;
-        left: 20%;
-        background-image: url("../img/emoji4-bg.png");
-        animation: appears 3s alternate infinite;
-    }
-    
-    .emoji5-bg {
-        top: 85%;
-        left: 80%;
-        background-image: url("../img/emoji5-bg.png");
-        animation: appears 2.2s alternate infinite;
-    }
-    
-    .emoji6-bg {
-        top: 95%;
-        left: 65%;
-        background-image: url("../img/emoji6-bg.png");
-        animation: appears 1.6s alternate infinite;
-    }
-    
-    .emoji7-bg {
-        top: 20%;
-        left: 60%;
-        background-image: url("../img/emoji7-bg.png");
-        animation: appears 1.5s alternate infinite;
-    }
-    
-    .emoji8-bg {
-        top: 16%;
-        left: 80%;
-        background-image: url("../img/emoji8-bg.png");
-        animation: appears 2s alternate infinite;
-    }
 
-    .heading {
-        font-size: 40px;
-    }
-
-    .services .main-card {
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    .services aside {
-        margin-top: 0;
-        margin-bottom: 70px;
-    }
-
-    .instagram-card {
-        order: 1;
-    }
-    .instagram-description {
-        order: 2;
-    }
-    .facebook-card {
-        order: 3;
-    }
-    .facebook-description {
-        order: 4;
-    }
-    .telegram-card {
-        order: 5;
-    }
-    .telegram-description {
-        order: 6;
-    }
-
-    
-
-    #instagramModal .down-arrow {
-        bottom: 40%;
-    }
-
-    #myBtn {
-        bottom: 0;
-        right: 5%;
-        width: 40px;
-        height: 40px;
-        background-size: 40px;
-    }
-
-    footer .call{
-        font-size: 20px;
-    }
-
-    footer .logo {
-        width: 100px;
-        height: 100px;
-    }
-    
-    footer .logo img{
-        width: 100px;
-        height: 100px;
-    }
-}
 
 @media (max-width: 1378px) {
     .welcome-block .lead {
@@ -784,23 +506,6 @@ footer .social {
 
     .welcome-block a img {
         margin-top: 100px;
-    }
-
-    #mainNav .nav-link {
-        text-align: center;
-    }
-
-    #mainNav .navbar-nav {
-        width: 100%;
-    }
-
-    .navbar-toggler:focus, .navbar-toggler:active {
-        outline: none;
-        box-shadow: none;
-    }
-
-    .viber-desktop {
-        display: none;
     }
 
     .main-card .card-text li:nth-child(1)::before,
@@ -859,6 +564,25 @@ footer .social {
     }
 }
 
+@media (max-width: 991px) {
+    #mainNav .nav-link {
+        text-align: center;
+    }
+
+    #mainNav .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-toggler:focus, .navbar-toggler:active {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .viber-desktop {
+        display: none;
+    }
+}
+
 @media (min-width: 1200px) {
     .viber-desktop {
         display: inline-block;
@@ -866,8 +590,87 @@ footer .social {
     .viber-mobile {
         display: none;
     }
-    footer .goodbye-block p{
-        display: inline;
+}
+
+@media (max-width: 768px) {
+    .services aside {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .services .main-card {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .services aside {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+
+    .instagram-card {
+        order: 1;
+    }
+    .instagram-description {
+        order: 2;
+    }
+    .facebook-card {
+        order: 3;
+    }
+    .facebook-description {
+        order: 4;
+    }
+    .telegram-card {
+        order: 5;
+    }
+    .telegram-description {
+        order: 6;
+    }
+
+    #instagramModal .down-arrow {
+        bottom: 40%;
+    }
+
+    #myBtn {
+        bottom: 0;
+        right: 5%;
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+
+    footer .call{
+        font-size: 20px;
+    }
+
+    footer .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    footer .logo img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-card .card-text li:nth-child(1)::before,
+    .main-card .card-text li:nth-child(2)::before,
+    .main-card .card-text li:nth-child(3)::before,
+    .main-card .card-text li:nth-child(4)::before {
+        width: 55px;
+        height: 55px;
+        background-size: 55px;
+    }
+
+    .main-card .card-text li {
+        font-size: 12px;
     }
 }
 

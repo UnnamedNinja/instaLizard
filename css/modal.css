@@ -1,0 +1,133 @@
+.modal .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.modal .nav-link {
+    background-color: #98ff98;
+    color: black;
+    padding: 15px;
+    font-weight: lighter;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.modal .nav-item:first-child .nav-link{
+    margin-left: 0;
+}
+
+.modal .nav-link.active {
+    background-color: #72c572;
+    color: black;
+    box-shadow: 0 0 0 4px black;
+}
+
+.modal-foot {
+    border-top: 1px solid black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.modal-foot .call{
+    color: rgb(122, 1, 1);
+}
+
+.modal-foot .viber-desktop, 
+.modal-foot .viber-mobile {
+    color: #7360f2;
+} 
+
+.modal-foot .viber-desktop:hover, 
+.modal-foot .viber-mobile:hover {
+    color: #5644d1;
+} 
+
+.modal-foot .telegram-message {
+    margin-left: 10px;
+}
+
+.modal-foot .write-us {
+    margin-top: 10px;
+}
+
+
+.service-group img {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-group .card {
+    height: 550px;
+}
+
+.service-group .prices {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.service-group .prices li{
+    border-bottom: 2px solid black;
+    width: 170px;
+    margin: 15px auto;
+    white-space: pre;
+}
+
+.service-group .prices div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.service-group .prices div i{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+
+
+
+@media (max-width: 1378px) {
+    .modal-foot {
+        padding-bottom: 0;
+    }
+
+    .modal-foot .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .modal-foot .fa-viber {
+        margin-left: 10px;
+    }
+
+    .modal-foot .fa-telegram,
+    .modal-foot .fa-viber {
+        font-size: 40px;
+    }
+
+    .modal-foot p:first-of-type {
+        padding: 0;
+        margin: 0;
+    }
+
+    .modal .nav-link {
+        padding: 8px;
+        margin-bottom: 3px;
+    }
+
+    .modal .nav-link.active {
+        box-shadow: 0 0 0 2px black;
+    }
+}

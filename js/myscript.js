@@ -11,7 +11,6 @@ window.onscroll = function() {
     mybutton.style.display = "none";
   }
 
-
   var currentScrollPos = window.pageYOffset;
   document.getElementById("mainNav").style.top = "0";
   if (prevScrollpos < currentScrollPos) {
@@ -27,9 +26,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+//НОРМАЛЬНА ПРОКРУТКА В МОДАЛАХ
 var modalBody = document.querySelectorAll('.modal-body');
 var modalNavBtn = document.querySelectorAll('.modal .nav-link');
-
 for (let i = 0; i < modalNavBtn.length; i++) {
   modalNavBtn[i].addEventListener('click', function() {
     if (i <= 3) {
@@ -47,9 +46,6 @@ for (let i = 0; i < modalNavBtn.length; i++) {
 function topModalFunction(counter) {
   modalBody[counter].scrollTop = 0;
 }
-
-
-
 
 //СХОВАТИ МЕНЮ ПРИ КЛІКУ
 $('.navbar-nav>li>a').on('click', function(){

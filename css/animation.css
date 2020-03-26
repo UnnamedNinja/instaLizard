@@ -1,0 +1,174 @@
+@keyframes down {
+    to {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes easy-down {
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes appears {
+    to {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+}
+
+
+.emoji2-bg {
+    top: 80%;
+    right: 15%;
+    background-image: url("../img/emoji2-bg.png");
+    animation: appears 1.2s alternate infinite;
+}
+
+.emoji3-bg {
+    top: 15%;
+    left: 7%;
+    background-image: url("../img/emoji3-bg.png");
+    animation: appears 1.8s alternate infinite;
+}
+
+.emoji4-bg {
+    top: 35%;
+    left: 15%;
+    background-image: url("../img/emoji4-bg.png");
+    animation: appears 3s alternate infinite;
+}
+
+.emoji5-bg {
+    top: 55%;
+    left: 7%;
+    background-image: url("../img/emoji5-bg.png");
+    animation: appears 2.2s alternate infinite;
+}
+
+.emoji6-bg {
+    top: 75%;
+    left: 15%;
+    background-image: url("../img/emoji6-bg.png");
+    animation: appears 1.6s alternate infinite;
+}
+
+.emoji7-bg {
+    top: 20%;
+    right: 7%;
+    background-image: url("../img/emoji7-bg.png");
+    animation: appears 1.5s alternate infinite;
+}
+
+.emoji8-bg {
+    top: 40%;
+    right: 15%;
+    background-image: url("../img/emoji8-bg.png");
+    animation: appears 2s alternate infinite;
+}
+
+.welcome-logo {
+    animation: easy-down 2s infinite alternate linear;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.welcome-logo img {
+    width: 400px;
+}
+
+.welcome-block a img {
+    animation: down 0.5s infinite alternate ease-in;
+    width: 40px;
+    margin-top: 70px;
+}
+
+
+
+
+@media (max-width: 991px) {
+    .welcome-block {
+        padding-top: 280px;
+    }
+
+    .welcome-logo {
+        animation: easy-down 2s infinite alternate linear;
+        margin: 0 auto;
+        width: 300px;
+    }
+    
+    .welcome-logo img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .emoji-bg {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+    }
+    
+    .emoji1-bg {
+        top: 20%;
+        left: 7%;
+        background-image: url("../img/emoji1-bg.png");
+        animation: appears 3s alternate infinite;
+    }
+    
+    .emoji2-bg {
+        top: 16%;
+        left: 30%;
+        background-image: url("../img/emoji2-bg.png");
+        animation: appears 1.2s alternate infinite;
+    }
+    
+    .emoji3-bg {
+        display: none;
+    }
+    
+    .emoji4-bg {
+        display: none;
+    }
+    
+    .emoji5-bg {
+        display: none;
+    }
+    
+    .emoji6-bg {
+        display: none;
+    }
+    
+    .emoji7-bg {
+        top: 20%;
+        left: 60%;
+        background-image: url("../img/emoji7-bg.png");
+        animation: appears 1.5s alternate infinite;
+    }
+    
+    .emoji8-bg {
+        top: 16%;
+        left: 80%;
+        background-image: url("../img/emoji8-bg.png");
+        animation: appears 2s alternate infinite;
+    }
+
+    .welcome-block {
+        padding-top: 250px;
+    }
+
+    .welcome-block a img {
+        margin-top: 50px;
+    }
+
+    .welcome-logo {
+        animation: easy-down 2s infinite alternate linear;
+        margin: 0 auto;
+        width: 200px;
+    }
+    
+    .welcome-logo img {
+        width: 200px;
+    }
+}

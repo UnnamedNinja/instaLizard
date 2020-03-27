@@ -88,7 +88,7 @@
 
 @media (max-width: 991px) {
     .welcome-block {
-        padding-top: 280px;
+        padding-top: 150px;
     }
 
     .welcome-logo {
@@ -105,61 +105,15 @@
 @media (max-width: 767px) {
 
     .emoji-bg {
-        width: 50px;
-        height: 50px;
-        background-size: 50px;
-    }
-    
-    .emoji1-bg {
-        top: 20%;
-        left: 7%;
-        background-image: url("../img/emoji1-bg.png");
-        animation: appears 3s alternate infinite;
-    }
-    
-    .emoji2-bg {
-        top: 16%;
-        left: 30%;
-        background-image: url("../img/emoji2-bg.png");
-        animation: appears 1.2s alternate infinite;
-    }
-    
-    .emoji3-bg {
         display: none;
-    }
-    
-    .emoji4-bg {
-        display: none;
-    }
-    
-    .emoji5-bg {
-        display: none;
-    }
-    
-    .emoji6-bg {
-        display: none;
-    }
-    
-    .emoji7-bg {
-        top: 20%;
-        left: 60%;
-        background-image: url("../img/emoji7-bg.png");
-        animation: appears 1.5s alternate infinite;
-    }
-    
-    .emoji8-bg {
-        top: 16%;
-        left: 80%;
-        background-image: url("../img/emoji8-bg.png");
-        animation: appears 2s alternate infinite;
     }
 
     .welcome-block {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .welcome-block a img {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .welcome-logo {

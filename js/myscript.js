@@ -1,9 +1,6 @@
-
-//Get the button
-var mybutton = document.getElementById("myBtn");
-var prevScrollpos = window.pageYOffset;
+let mybutton = document.getElementById("myBtn");
+let prevScrollpos = window.pageYOffset;
 document.getElementById("mainNav").style.top = "0";
-
 window.onscroll = function() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     mybutton.style.display = "block";
@@ -11,24 +8,20 @@ window.onscroll = function() {
     mybutton.style.display = "none";
   }
 
-  var currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
   document.getElementById("mainNav").style.top = "0";
   if (prevScrollpos < currentScrollPos) {
     document.getElementById("mainNav").style.top = "-80px";
   }
   prevScrollpos = currentScrollPos;
-
 }
-
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-//НОРМАЛЬНА ПРОКРУТКА В МОДАЛАХ
-var modalBody = document.querySelectorAll('.modal-body');
-var modalNavBtn = document.querySelectorAll('.modal .nav-link');
+let modalBody = document.querySelectorAll('.modal-body');
+let modalNavBtn = document.querySelectorAll('.modal .nav-link');
 for (let i = 0; i < modalNavBtn.length; i++) {
   modalNavBtn[i].addEventListener('click', function() {
     if (i <= 3) {
@@ -42,12 +35,36 @@ for (let i = 0; i < modalNavBtn.length; i++) {
     }
   });
 }
-
 function topModalFunction(counter) {
   modalBody[counter].scrollTop = 0;
 }
 
-//СХОВАТИ МЕНЮ ПРИ КЛІКУ
+
 $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
+});
+
+
+$(".modal").on("shown.bs.modal", function()  { 
+  var urlReplace = "#" + $(this).attr('id');
+  history.pushState(null, null, urlReplace); 
+});
+$(window).on('popstate', function() { 
+  $(".modal").modal('hide');
+});
+
+$(".modal .close").on("click", function()  {
+  history.back();
+});
+
+$(".modal").keyup(function(e) {
+  if (e.key === "Escape") {
+  history.back();
+ }
+});
+
+document.body.addEventListener('click', function(e) {
+  if (e.target.className == "modal fade") {
+    history.back();
+  }
 });

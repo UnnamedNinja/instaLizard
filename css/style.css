@@ -578,23 +578,23 @@ footer .social {
         box-shadow: none;
     }
 
+}
+
+@media (max-width: 1000px) {
     .viber-desktop {
         display: none;
     }
+    .viber-mobile {
+        display: inline-block;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1001px) {
     .viber-desktop {
         display: inline-block;
     }
     .viber-mobile {
         display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .services aside {
-        margin-top: 0;
     }
 }
 
@@ -637,11 +637,11 @@ footer .social {
     }
 
     #myBtn {
-        bottom: 0;
-        right: 5%;
-        width: 40px;
-        height: 40px;
-        background-size: 40px;
+        bottom: 6%;
+        right: 3%;
+        width: 35px;
+        height: 35px;
+        background-size: 35px;
     }
 
     footer .call{

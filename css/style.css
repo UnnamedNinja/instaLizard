@@ -84,7 +84,7 @@ hr {
     color: white;
 }
 
-.welcome-block h2 {
+.welcome-block h1 {
     font-size: 60px;
     padding-top: 10px;
     margin-bottom: 0;
@@ -493,7 +493,7 @@ footer .social {
         font-size: 20px;
     }
     
-    .welcome-block h2 {
+    .welcome-block h1 {
         font-size: 40px;
         padding-top: 10px;
         margin-bottom: 0;

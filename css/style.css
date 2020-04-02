@@ -227,18 +227,6 @@ hr {
     background-color: #c9b21d;
 }
 
-#instagramModal .down-arrow {
-    position: absolute;
-    z-index: 99;
-    bottom: 20%;
-    right: 10px;
-    width: 50px;
-    animation: down 0.3s infinite alternate ease-in;
-}
-#instagramModal .down-arrow img{
-    width: 50px;
-}
-
 .facebook-card {
     align-self: flex-end;
     color: rgb(242, 248, 217);
@@ -519,40 +507,6 @@ footer .social {
 
     .main-card .card-text li {
         font-size: 14px;
-    }
-
-    .modal-foot {
-        padding-bottom: 0;
-    }
-
-    .modal-foot .message {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5px;
-    }
-
-    .modal-foot .fa-viber {
-        margin-left: 10px;
-    }
-
-    .modal-foot .fa-telegram,
-    .modal-foot .fa-viber {
-        font-size: 40px;
-    }
-
-    .modal-foot p:first-of-type {
-        padding: 0;
-        margin: 0;
-    }
-
-    .modal .nav-link {
-        padding: 8px;
-        margin-bottom: 3px;
-    }
-
-    .modal .nav-link.active {
-        box-shadow: 0 0 0 2px black;
     }
 
     .advantages .card-title {

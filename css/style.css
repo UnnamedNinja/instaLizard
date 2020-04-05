@@ -221,6 +221,7 @@ hr {
 
 .instagram-card .prices-btn {
     background-color: #f9dd24;
+    animation: border-yellow 0.3s infinite alternate;
 }
 
 .instagram-card .prices-btn:hover {
@@ -246,6 +247,7 @@ hr {
 
 .facebook-card .prices-btn {
     background-color: #191970;
+    animation: border-dblue 0.3s infinite alternate;
     color: white;
 }
 
@@ -271,6 +273,7 @@ hr {
 
 .telegram-card .prices-btn {
     background-color: #008080;
+    animation: border-lblue 0.3s infinite alternate;
     color: white;
 }
 
@@ -627,4 +630,25 @@ footer .social {
         font-size: 12px;
     }
 }
+
+@media (max-width: 1200px) {
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: black;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
 

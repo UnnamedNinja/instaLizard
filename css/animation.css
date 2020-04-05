@@ -17,6 +17,33 @@
     }
 }
 
+@keyframes border-yellow {
+    to {
+        box-shadow: 0 0 0 3px #f9dd24;
+    }
+}
+@keyframes border-dblue{
+    to {
+        box-shadow: 0 0 0 3px #191970;
+    }
+}
+@keyframes border-lblue {
+    to {
+        box-shadow: 0 0 0 3px #008080;
+    }
+}
+
+@keyframes viber-color {
+    to {
+        color: #c3b9ff;
+    }
+}
+@keyframes telegram-color {
+    to {
+        color: rgb(188, 203, 245);
+    }
+}
+
 
 .emoji2-bg {
     top: 80%;

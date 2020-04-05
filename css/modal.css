@@ -18,7 +18,7 @@
 
 .modal-title {
     margin-left: auto;
-    font-size: 30px;
+    font-size: 35px;
     padding-left: 20px;
 }
 
@@ -50,6 +50,7 @@
 .modal-foot .viber-desktop, 
 .modal-foot .viber-mobile {
     color: #7360f2;
+    animation: viber-color 0.5s infinite alternate linear;
 } 
 
 .modal-foot .viber-desktop:hover, 
@@ -59,10 +60,7 @@
 
 .modal-foot .telegram-message {
     margin-left: 10px;
-}
-
-.modal-foot .write-us {
-    margin-top: 10px;
+    animation: telegram-color 0.5s infinite alternate linear;
 }
 
 .service-group {
@@ -85,6 +83,15 @@
 
 .service-group .card {
     height: 550px;
+}
+
+.service-group .card-img-top {
+    width: 100px;
+}
+
+.service-group .card-title {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .service-group .prices {
@@ -121,10 +128,6 @@
 
 
 @media (max-width: 1378px) {
-    .modal-foot {
-        padding-bottom: 0;
-    }
-
     .modal-foot .message {
         display: flex;
         justify-content: center;
@@ -138,7 +141,7 @@
 
     .modal-foot .fa-telegram,
     .modal-foot .fa-viber {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .modal-foot p:first-of-type {
@@ -156,9 +159,42 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .modal-foot .fa-telegram,
+    .modal-foot .fa-viber {
+        font-size: 60px;
+    }
+
+    .modal-foot .call {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-foot .call {
+        font-size: 25px;
+    }
+}
+
 @media (max-width: 1200px) {
     .service-group > div {
         display: block;
         width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-foot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .modal-foot > p {
+        width: 100%;
+    }
+
+    .modal-foot p {
+        font-size: 25px;
     }
 }
